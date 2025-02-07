@@ -310,7 +310,7 @@ body {
 
     .nav-links.active {
         display: flex;
-        margin-top: 2em;
+        margin-top: 12px;
     }
 
     .nav-links a {
