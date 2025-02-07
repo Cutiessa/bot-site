@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +18,6 @@ body {
     padding: 20px;
 }
 
-/* Шапка сайта */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -60,7 +58,6 @@ body {
     font-weight: 600;
 }
 
-/* Герой-секция */
 .hero-section {
     display: flex;
     align-items: center;
@@ -146,7 +143,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Секция команд */
 .commands-section {
     margin-top: 80px;
 }
@@ -180,7 +176,6 @@ body {
     font-weight: 600;
 }
 
-/* Секция разработчиков */
 .developers-section {
     margin-top: 80px;
 }
@@ -224,14 +219,14 @@ body {
     margin-top: 1em;
     background: linear-gradient(135deg, #E3C3F9, #D4BDF7);
     color: #121212;
-    transition: all 0.3s ease; /* Плавный переход для всех свойств */
-    transform: scale(1); /* Начальный масштаб */
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 .contact-btn:hover {
     background: linear-gradient(135deg, #D4BDF7, #E3C3F9);
-    transform: scale(1.05); /* Увеличение масштаба при наведении */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для эффекта "поднятия" */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Футер */
@@ -247,4 +242,107 @@ body {
 .site-footer p {
     color: #ccc;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .site-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .bot-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondary-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .command-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .command-card {
+        padding: 15px;
+    }
+
+    .command-card code {
+        font-size: 1.1rem;
+    }
+
+    .developer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .developer-card {
+        padding: 15px;
+    }
+
+    .developer-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .site-footer {
+        padding: 20px 10px;
+    }
+
+    .site-footer p {
+        font-size: 0.8rem;
+    }
 }
