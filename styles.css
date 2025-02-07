@@ -327,6 +327,18 @@ body {
         margin-top: 150px;
     }
 
+    .command-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .developers-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
