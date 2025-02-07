@@ -310,6 +310,7 @@ body {
 
     .nav-links.active {
         display: flex;
+        margin-top: 2em;
     }
 
     .nav-links a {
@@ -323,7 +324,7 @@ body {
     .hero-section {
         flex-direction: column;
         padding: 20px;
-        margin-top: 40px;
+        margin-top: 150px;
     }
 
     .hero-content h1 {
